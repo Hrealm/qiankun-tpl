@@ -3,10 +3,8 @@
 		active-text-color="#ffd04b"
 		background-color="#545c64"
 		class="el-menu-vertical-demo"
-		default-active="2"
+		default-active="1"
 		text-color="#fff"
-		@open="handleOpen"
-		@close="handleClose"
 	>
 		<el-menu-item index="1">
 			<el-icon><icon-menu /></el-icon>
@@ -50,7 +48,7 @@ export default {
 }
 </script>
 <style scoped lang='scss'>
-// .el-menu-vertical-demo{
-//   height: 100%;
-// }
+.el-menu-vertical-demo{
+  height: 100%;
+}
 </style>

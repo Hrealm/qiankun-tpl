@@ -1,6 +1,4 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  
   <el-container>
     <el-aside width="200px">
       <AsideMenu/>
@@ -9,14 +7,16 @@
       <el-header>
         <HelloWorld msg="Welcome to Your Vue.js + Qiankun App"/>
       </el-header>
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import AsideMenu from './components/AsideMenu.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+import AsideMenu from '@/components/AsideMenu.vue'
 
 export default {
   name: 'App',
