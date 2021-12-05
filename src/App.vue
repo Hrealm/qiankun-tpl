@@ -2,7 +2,9 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   
   <el-container>
-    <el-aside width="200px">Aside</el-aside>
+    <el-aside width="200px">
+      <AsideMenu/>
+    </el-aside>
     <el-container>
       <el-header>
         <HelloWorld msg="Welcome to Your Vue.js + Qiankun App"/>
@@ -14,11 +16,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import AsideMenu from './components/AsideMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    AsideMenu
   }
 }
 </script>
@@ -47,7 +51,7 @@ body{
 }
 
 .el-aside {
-  background-color: #d3dce6;
+  background-color: #545c64;
   color: var(--el-text-color-primary);
   text-align: center;
   line-height: 200px;
