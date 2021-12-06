@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>TESTTEST</h1>
+    <h1>VUE3 & QIANKUN</h1>
   </div>
 </template>
 

@@ -3,18 +3,23 @@
 		active-text-color="#ffd04b"
 		background-color="#545c64"
 		class="el-menu-vertical-demo"
-		default-active="1"
+		default-active="/"
 		text-color="#fff"
+    router
 	>
-		<el-menu-item index="1">
+		<el-menu-item index="/">
+			<el-icon><icon-menu /></el-icon>
+			<span>HOME</span>
+		</el-menu-item>
+		<el-menu-item index="/sub-vue">
 			<el-icon><icon-menu /></el-icon>
 			<span>sub-vue</span>
 		</el-menu-item>
-		<el-menu-item index="2">
+		<el-menu-item index="/sub-react">
 			<el-icon><document /></el-icon>
 			<span>sub-react</span>
 		</el-menu-item>
-		<el-menu-item index="3">
+		<el-menu-item index="/sub-other">
 			<el-icon><setting /></el-icon>
 			<span>sub-other</span>
 		</el-menu-item>
@@ -23,19 +28,15 @@
 
 <script>
 import { reactive, toRefs, onBeforeMount, onMounted } from 'vue'
-import {
-  Document,
-  Menu as IconMenu,
-  Setting,
-} from '@element-plus/icons'
+import { Document, Menu as IconMenu, Setting } from '@element-plus/icons'
 export default {
 	name: 'AsideMenu',
 	props: [],
-  components: {
-    Document,
-    Setting,
-    IconMenu,
-  },
+	components: {
+		Document,
+		Setting,
+		IconMenu,
+	},
 	setup() {
 		const _state = reactive({})
 		const refData = toRefs(_state)
@@ -48,7 +49,7 @@ export default {
 }
 </script>
 <style scoped lang='scss'>
-.el-menu-vertical-demo{
-  height: 100%;
+.el-menu-vertical-demo {
+	height: 100%;
 }
 </style>
