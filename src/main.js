@@ -12,7 +12,7 @@ registerMicroApps([
   //   activeRule: '/yourActiveRule',
   // },
   {
-    name: 'sub-vue-app',
+    name: 'sub-vue',
     entry: '//localhost:8081',
     container: '#sub-app',
     activeRule: '/sub-vue',
