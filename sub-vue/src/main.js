@@ -47,7 +47,7 @@ export async function mount(props) {
  * 应用每次 切出/卸载 会调用的方法，通常在这里我们会卸载微应用的应用实例
  */
 export async function unmount() {
-  instance.$destroy();
+  // instance.$destroy();
   instance.$el.innerHTML = '';
   instance = null;
   // router = null;
